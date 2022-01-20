@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput } from "react-native";
+import { useState } from "react";
+import Stack from "./components/Stack";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  // const [counter, setCounter] = useState(12);
+  // const [textEntered, setText] = useState(" ");
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  // delTask = (name) => {
+  //   let newList = taskList.filter((x) => x.name !== name);
+  //   setTask({
+  //     taskList: newList,
+  //   });
+  // };
+
+  // const list = taskList.map((x, ind) => (
+  //   <NewNote title={x.title} name={x.name} index={ind} rec2del={delTask} />
+  // ));
+
+  return <Stack />;
+}
